@@ -1,59 +1,317 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>개인정보처리방침</title>
-    <style>
-        body { max-width: 800px; margin: 40px auto; font-family: sans-serif; line-height: 1.6; }
-        h1, h2, h3 { color: #2D77F7; }
-    </style>
+<meta charset="utf-8" />
+<title>MoodDoit 개인정보처리방침 | Privacy Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="MoodDoit Android 앱 개인정보처리방침. Google 계정 로그인, Google Drive 백업, 위치 기반 알림, Firebase 데이터 처리에 대한 안내." />
+<meta name="robots" content="noindex,nofollow"><!-- 제거하면 검색엔진 색인 허용 -->
+<style>
+:root {
+  --accent: #4f46e5;
+  --accent-bg: rgba(79,70,229,.08);
+  --danger: #dc2626;
+  --text: #111827;
+  --text-light: #374151;
+  --bg: #ffffff;
+  --bg-alt: #f9fafb;
+  --border: #e5e7eb;
+  --radius: .5rem;
+  --maxw: 880px;
+  --mono: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  padding:0;
+  background:var(--bg-alt);
+  color:var(--text);
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Pretendard,sans-serif;
+  line-height:1.6;
+  font-size:16px;
+}
+header{
+  background:var(--bg);
+  padding:2rem 1rem 1rem;
+  border-bottom:1px solid var(--border);
+  text-align:center;
+}
+header h1{margin:.2rem 0;font-size:1.75rem;}
+header p{margin:.25rem 0;color:var(--text-light);}
+main{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:2rem 1rem 4rem;
+  background:var(--bg);
+}
+nav.toc{
+  background:var(--accent-bg);
+  border:1px solid var(--accent);
+  border-radius:var(--radius);
+  padding:1rem;
+  margin:2rem 0;
+}
+nav.toc h2{margin-top:0;font-size:1.125rem;}
+nav.toc ul{margin:0;padding-left:1.2rem;}
+nav.toc li{margin:.25rem 0;}
+h2{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);}
+h3{margin-top:2rem;}
+table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.95rem;}
+th,td{border:1px solid var(--border);padding:.5rem;vertical-align:top;text-align:left;}
+th{background:var(--bg-alt);}
+code{font-family:var(--mono);background:var(--bg-alt);padding:.1rem .25rem;border-radius:.25rem;font-size:.9em;}
+details{margin:2rem 0;border:1px solid var(--border);border-radius:var(--radius);background:var(--bg-alt);padding:1rem;}
+details summary{cursor:pointer;font-weight:600;}
+small{color:var(--text-light);}
+.section-id{color:var(--accent);font-size:.8rem;font-weight:600;margin-right:.25rem;}
+.badge-optional{display:inline-block;padding:.1rem .4rem;border-radius:.25rem;background:var(--accent-bg);color:var(--accent);font-size:.75em;margin-left:.25rem;}
+.badge-danger{background:rgba(220,38,38,.1);color:var(--danger);}
+footer{text-align:center;padding:2rem 1rem;font-size:.85rem;color:var(--text-light);}
+.language-switch{margin-top:1rem;font-size:.9rem;}
+.language-switch a{text-decoration:underline;color:var(--accent);}
+mark{background:rgba(255,255,0,.4);}
+</style>
 </head>
 <body>
-    <h1>[MoodDoit] 개인정보처리방침</h1>
-    <p>
-        <strong>[MoodDoit]</strong>(이하 “앱”)은 이용자의 개인정보를 소중하게 생각하며, 관련 법령을 준수하여 개인정보를 안전하게 관리합니다.
-        본 방침은 앱에서 제공하는 구글 계정 연동 및 데이터 백업/복원 기능을 포함한 서비스 이용 시, 이용자의 개인정보가 어떻게 처리되는지 안내합니다.
-    </p>
+<header id="top">
+  <h1>MoodDoit 개인정보처리방침</h1>
+  <p>마지막 수정일: <strong>2025-07-17</strong></p>
+  <div class="language-switch">
+    English? <a href="#en-summary">Jump to English Summary</a>
+  </div>
+</header>
 
-    <h2>1. 수집하는 개인정보 항목</h2>
-    <p>앱은 Google 계정 연동(로그인) 시 아래와 같은 정보를 수집할 수 있습니다.<br>
-    - 구글 계정 기본정보: 이메일 주소, 사용자 이름, 프로필 이미지 (단, 앱 내에서 구글 드라이브 연동/백업 및 복원 외의 목적으로 사용하지 않습니다)<br>
-    - 백업 데이터: 사용자의 할 일 데이터(텍스트, 체크리스트 등)
-    </p>
+<main>
 
-    <h2>2. 개인정보의 수집 및 이용 목적</h2>
-    <p>앱은 아래 목적을 위해서만 개인정보를 이용합니다.<br>
-    - Google Drive를 이용한 데이터 백업 및 복원<br>
-    - 사용자가 구글 계정으로 로그인하여 자신의 할 일 데이터를 Google Drive에 백업하거나, 복원할 수 있도록 지원합니다.
-    </p>
+<section>
+  <p><strong>MoodDoit</strong>(이하 “앱”)은 이용자의 개인정보를 소중히 여기며 관련 법령과 플랫폼 정책(Google Play 사용자 데이터 정책, 위치 권한 정책 등)을 준수합니다. 본 방침은 앱에서 제공하는 Google 계정 연동, Google Drive 백업/복원, 알림(시간 및 선택적 위치 기반), Firebase 기반 분석/안정성 개선, 그리고 선택적 광고 기능 사용 시 개인정보가 어떻게 처리되는지 설명합니다.</p>
+</section>
 
-    <h2>3. 개인정보의 보유 및 이용기간</h2>
-    <p>앱은 구글 계정 정보 및 할 일 데이터를 Google Drive 백업/복원에 필요한 최소한의 범위에서만 처리합니다.<br>
-    사용자가 백업 데이터를 삭제하거나, 구글 계정 연동을 해제하면 해당 정보의 처리를 즉시 중단합니다.<br>
-    앱은 자체적으로 개인정보를 별도로 저장하거나, 외부로 전송하지 않습니다.
-    </p>
+<nav class="toc" aria-label="Table of contents">
+  <h2>목차</h2>
+  <ul>
+    <li><a href="#summary">0. 개요(요약)</a></li>
+    <li><a href="#scope">1. 적용 범위</a></li>
+    <li><a href="#data-collected">2. 수집하는 항목 및 방법</a></li>
+    <li><a href="#purposes">3. 이용 목적</a></li>
+    <li><a href="#retention">4. 보유 및 관리</a></li>
+    <li><a href="#sharing">5. 제3자 제공/공유</a></li>
+    <li><a href="#location-extra">6. 위치 데이터 처리 추가 설명</a></li>
+    <li><a href="#user-rights">7. 이용자 권리</a></li>
+    <li><a href="#security">8. 데이터 보안</a></li>
+    <li><a href="#children">9. 아동 개인정보</a></li>
+    <li><a href="#contact">10. 문의처</a></li>
+    <li><a href="#changes">11. 방침 변경</a></li>
+    <li><a href="#en-summary">English Summary</a></li>
+    <li><a href="#dev-notes">개발자 참고(숨김)</a></li>
+  </ul>
+</nav>
 
-    <h2>4. 개인정보의 제3자 제공</h2>
-    <p>앱은 이용자의 동의 없이 개인정보를 제3자에게 제공하지 않습니다.<br>
-    단, Google Drive 연동 과정에서 구글(google.com) 서비스에 정보가 전달될 수 있습니다. 이는 구글의 개인정보처리방침에 따릅니다.
-    </p>
+<!-- ========================================================= -->
+<h2 id="summary"><span class="section-id">0.</span>개요 (요약)</h2>
+<p>앱은 다음 범주의 데이터를 처리할 수 있습니다. 실제 사용 여부는 이용자가 선택한 기능(예: 위치 기반 알림, 광고 개인화)에 따라 달라집니다.</p>
 
-    <h2>5. 개인정보의 파기</h2>
-    <p>백업 데이터 및 구글 계정 정보는 이용 목적 달성 시 또는 사용자의 요청(연동 해제, 백업 데이터 삭제) 시 즉시 파기됩니다.</p>
+<table>
+<thead>
+<tr>
+  <th>데이터 범주</th>
+  <th>수집 출처</th>
+  <th>용도</th>
+  <th>공유 대상</th>
+  <th>필수 여부</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Google 계정 기본정보<br><small>(이메일, 이름, 프로필 이미지)</small></td>
+  <td>사용자 Google 로그인</td>
+  <td>계정 인증, Drive 백업 연결</td>
+  <td>Google 인증 서비스</td>
+  <td>백업 기능에 필수(선택적 로그인)</td>
+</tr>
+<tr>
+  <td>할 일 백업 데이터</td>
+  <td>사용자 입력</td>
+  <td>Google Drive 백업/복원</td>
+  <td>사용자 소유 Google Drive</td>
+  <td>핵심 기능</td>
+</tr>
+<tr>
+  <td><strong>위치 데이터</strong><br>정밀(선택), 대략(IP 기반)</td>
+  <td>기기 센서(권한), Firebase/Google SDK, OS 지역</td>
+  <td>위치 알림, 통계, 품질 개선</td>
+  <td>Firebase, (선택) Mobile Ads</td>
+  <td>선택 / 기능별</td>
+</tr>
+<tr>
+  <td>앱 사용 이벤트·진단</td>
+  <td>앱 &amp; Firebase 자동</td>
+  <td>분석, 오류 수정</td>
+  <td>Firebase</td>
+  <td>선택(기능별 설정)</td>
+</tr>
+<tr>
+  <td>광고 ID 등 식별자<span class="badge-optional">AdMob 사용 시</span></td>
+  <td>OS &amp; Google Mobile Ads SDK</td>
+  <td>광고 제공/부정행위 방지</td>
+  <td>Google Mobile Ads</td>
+  <td>선택</td>
+</tr>
+</tbody>
+</table>
 
-    <h2>6. 이용자의 권리와 행사 방법</h2>
-    <p>이용자는 언제든지 앱 내 설정 메뉴를 통해 구글 계정 연동을 해제할 수 있습니다.<br>
-       백업 데이터는 사용자의 Google Drive 내에 저장되므로, 사용자가 직접 구글 드라이브에서 삭제할 수 있습니다.<br>
-       개인정보 관련 문의는 아래 연락처로 요청할 수 있습니다.</p>
+<!-- ========================================================= -->
+<h2 id="scope"><span class="section-id">1.</span>적용 범위</h2>
+<p>이 방침은 MoodDoit Android 앱과 그에 통합된 온라인 서비스(로그인, Drive 백업/복원, 알림), Google Firebase 제품군, 그리고 선택적으로 통합될 수 있는 Google Mobile Ads SDK에 적용됩니다.</p>
 
-    <h2>7. 개인정보 보호 책임자</h2>
-    <p>담당자: [JungSangYeon]<br>
-    이메일: [jsyzkem12@gmail.com]</p>
+<!-- ========================================================= -->
+<h2 id="data-collected"><span class="section-id">2.</span>수집하는 개인정보 항목 및 방법</h2>
 
-    <h2>8. 기타</h2>
-    <p>본 방침은 관련 법령 및 앱 정책 변경에 따라 수시로 개정될 수 있습니다.<br>
-    변경 시 앱 내 공지 또는 업데이트를 통해 안내합니다.</p>
+<h3>2.1 사용자가 직접 제공하는 정보</h3>
+<ul>
+  <li><strong>Google 계정 기본정보</strong>: 이메일 주소, 표시 이름, 프로필 이미지. (OAuth 동의 후 획득.)</li>
+  <li><strong>할 일/콘텐츠 데이터</strong>: 사용자가 앱에 입력하는 텍스트, 체크 상태, 일정 등.</li>
+</ul>
 
-    <p><strong>최종 수정일:</strong> 2025년 5월 31일</p>
-</body>
-</html>
+<h3>2.2 자동으로 수집/파생되는 정보</h3>
+<ul>
+  <li><strong>기기 정보</strong>: 기기 모델, OS 버전, 앱 버전, 언어/지역 설정.</li>
+  <li><strong>앱 이벤트</strong>: 실행, 화면 보기, 기능 사용 등(Analytics).</li>
+  <li><strong>진단 데이터</strong>: 충돌 로그, 성능 지표, 지연 시간(Performance Monitoring, Crashlytics).</li>
+  <li><strong>네트워크 정보(IP 등)</strong>: 서비스 제공, 보안, 통계 목적 및 <em>국가/도시 수준 대략적 위치</em> 추론에 사용될 수 있음.</li>
+  <li><strong>광고 식별자</strong> (AdMob 사용 시): 광고 제공 및 부정행위 방지.</li>
+</ul>
+
+<h3>2.3 권한 기반 위치 데이터 (앱 기능)</h3>
+<p>앱이 제공하는 <strong>위치 기반 알림/리마인더</strong> 기능을 사용하려면 Android 위치 권한(정밀 또는 대략)을 요청할 수 있습니다. 사용자는 허용/거부를 선택할 수 있으며 거부 시 해당 기능만 제한되고 나머지 기능은 계속 사용 가능합니다.</p>
+<p>백그라운드 위치가 필요한 기능을 활성화할 경우, 앱은 권한 요청 전 별도의 안내 화면(눈에 띄는 고지)을 표시하고 동의를 받습니다.</p>
+
+<!-- ========================================================= -->
+<h2 id="purposes"><span class="section-id">3.</span>개인정보의 이용 목적</h2>
+<ol>
+  <li><strong>계정 인증 &amp; 데이터 동기화</strong>: Google 로그인 후 개인 데이터(할 일)를 사용자의 Google Drive에 백업/복원.</li>
+  <li><strong>알림 &amp; 리마인더</strong>: 사용자 지정 시간 또는 (사용 시) 위치 기반 조건에 따라 알림 제공.</li>
+  <li><strong>서비스 품질 개선</strong>: Firebase Analytics/Performance/Crashlytics 데이터로 앱 성능, 안정성 개선. 이 과정에서 대략적 위치가 통계에 포함될 수 있음.</li>
+  <li><strong>광고 제공*(선택)*</strong>: AdMob 연동 시 광고 타게팅, 빈도 제어, 부정행위 방지.</li>
+</ol>
+
+<!-- ========================================================= -->
+<h2 id="retention"><span class="section-id">4.</span>보유 및 관리</h2>
+<ul>
+  <li><strong>사용자 백업 데이터</strong>: 사용자의 Google Drive 계정에 저장되며 사용자가 직접 삭제할 수 있습니다.</li>
+  <li><strong>앱 로컬 데이터</strong>: 기기에서 앱 삭제 시 제거됩니다.</li>
+  <li><strong>Firebase 분석/진단 데이터</strong>: Google 시스템에 저장되며 Firebase 표준 보존 정책을 따릅니다(개발자 삭제 요청 가능).</li>
+  <li><strong>위치 데이터</strong>: 알림 처리 후 장기 보관하지 않으며, 필요한 경우 최소 기간만 유지하거나 집계/익명화합니다.</li>
+</ul>
+
+<!-- ========================================================= -->
+<h2 id="sharing"><span class="section-id">5.</span>제3자 제공 및 공유</h2>
+<p>다음 표는 MoodDoit가 서비스를 제공하기 위해 데이터를 처리하거나 전송할 수 있는 제3자/서비스 목록입니다.</p>
+
+<table>
+<thead>
+<tr>
+  <th>제3자 / 서비스</th>
+  <th>공유되는 데이터</th>
+  <th>공유 목적</th>
+  <th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Google Firebase (Analytics, Crashlytics, Performance 등)</td>
+  <td>앱 이벤트, 기기/진단 정보, 마스킹된 IP(대략 위치), 충돌 로그</td>
+  <td>사용 분석, 오류 및 성능 개선</td>
+  <td>Firebase 개인정보처리방침 적용</td>
+</tr>
+<tr>
+  <td>Google 인증 서비스</td>
+  <td>계정 ID, 토큰</td>
+  <td>Google 로그인 인증</td>
+  <td>사용자 OAuth 동의 후</td>
+</tr>
+<tr>
+  <td>Google Drive API</td>
+  <td>사용자 백업 데이터(할 일)</td>
+  <td>백업/복원</td>
+  <td>사용자 계정 소유 공간</td>
+</tr>
+<tr>
+  <td>Google Mobile Ads (AdMob)<span class="badge-optional">선택</span></td>
+  <td>IP(일반 위치 추정), 광고 ID, 앱 상호작용</td>
+  <td>광고 제공, 측정, 부정행위 방지</td>
+  <td>광고 비활성 시 제한</td>
+</tr>
+<tr>
+  <td>법적 요구</td>
+  <td>법령상 필요한 정보</td>
+  <td>법적 의무 이행</td>
+  <td>소환장, 법원 명령 등</td>
+</tr>
+</tbody>
+</table>
+
+<p>앱은 위탁처 외 제3자에게 사용자의 개인 콘텐츠를 판매하지 않습니다.</p>
+
+<!-- ========================================================= -->
+<h2 id="location-extra"><span class="section-id">6.</span>위치 데이터 처리 추가 설명</h2>
+<ol>
+  <li><strong>대략적 위치(Approximate)</strong>: Firebase Analytics 및 일부 Google SDK는 마스킹된 IP 주소 등으로부터 국가/도시 수준 위치를 추론할 수 있습니다. 광고 SDK 사용 시 광고 제공/부정행위 방지를 위해 활용될 수 있습니다.</li>
+  <li><strong>정밀 위치(Precise)</strong>: 사용자가 위치 기반 알림 기능을 활성화하고 기기 위치 권한을 허용한 경우에만 사용됩니다(GPS, Wi‑Fi, 셀룰러 신호 등).</li>
+  <li><strong>백그라운드 위치</strong>: 앱이 닫혀 있어도 지정 장소 도착 시 알림이 필요할 경우에 한해 요청합니다. 권한 요청 전에 눈에 띄는 고지와 동의를 제공합니다. 설정에서 언제든지 변경 가능.</li>
+</ol>
+
+<!-- ========================================================= -->
+<h2 id="user-rights"><span class="section-id">7.</span>이용자 권리 및 선택</h2>
+<ul>
+  <li><strong>권한 제어</strong>: Android 설정 &gt; 앱 &gt; MoodDoit &gt; 권한에서 위치, 계정 등에 대한 권한을 변경하거나 철회할 수 있습니다.</li>
+  <li><strong>Google 계정 연동 해제</strong>: 앱 설정에서 로그아웃 / 연동 해제.</li>
+  <li><strong>백업 데이터 삭제</strong>: Google Drive 내 MoodDoit 백업 폴더/파일을 직접 삭제.</li>
+</ul>
+
+<!-- ========================================================= -->
+<h2 id="security"><span class="section-id">8.</span>데이터 보안</h2>
+<p>데이터 전송 시 TLS 등 암호화 프로토콜을 사용합니다. Firebase 및 Google Mobile Ads SDK 역시 전송 중 암호화를 적용합니다. 개발팀은 최소 권한 원칙을 따르고 민감 데이터의 장기 저장을 피합니다.</p>
+
+<!-- ========================================================= -->
+<h2 id="children"><span class="section-id">9.</span>아동 개인정보</h2>
+<p>본 앱은 일반 사용자를 대상으로 하며 아동을 주요 대상으로 설계되지 않았습니다. 아동 데이터 수집이 필요한 경우 관련 법령에 따른 추가 보호 조치를 시행합니다.</p>
+
+<!-- ========================================================= -->
+<h2 id="contact"><span class="section-id">10.</span>개인정보 보호 책임자 / 문의</h2>
+<p>담당자: Jung Sang Yeon<br>
+이메일: <a href="mailto:jsyzkem12@gmail.com">jsyzkem12@gmail.com</a><br>
+이메일 제목에 <code>MoodDoit Privacy</code>를 포함해 주세요.</p>
+
+<!-- ========================================================= -->
+<h2 id="changes"><span class="section-id">11.</span>방침 변경</h2>
+<p>법령, SDK 변경 또는 서비스 확장에 따라 본 방침이 수정될 수 있습니다. 중요한 변경 시 앱 내 공지, 업데이트 노트 또는 웹페이지 업데이트를 통해 안내하며, 페이지 상단에 최종 수정일을 표시합니다.</p>
+
+<!-- ========================================================= -->
+<h2 id="en-summary">English Summary</h2>
+<p lang="en">**MoodDoit** (the “App”) lets you manage to‑dos, back them up to your Google Drive, and receive time‑ or location‑based reminders. We also use Firebase services (Analytics, Crashlytics, Performance) to improve quality and stability, and may optionally serve ads via Google Mobile Ads (AdMob).</p>
+<p lang="en"><strong>Data we may process:</strong> Google account info (email, name, profile image) when you sign in; user‑entered to‑dos that you choose to back up; approximate or precise location (precise only if you grant permission and enable location reminders; approximate may be inferred from masked IP by Firebase or AdMob); app usage events and diagnostics; device info; and advertising identifiers if ads are enabled.</p>
+<p lang="en"><strong>Location:</strong> Device location is used only to trigger user‑requested reminders (foreground and, if you enable it, background). You can deny the permission and still use core features. Firebase Analytics may derive coarse location from masked IP addresses for aggregated reporting. AdMob may use IP for general location to serve and measure ads.</p>
+<p lang="en"><strong>Sharing:</strong> Data needed to provide these services is transmitted to Google (Firebase, Sign‑In, Drive, Mobile Ads). We do not sell your personal content. You can revoke permissions in Android settings, disconnect your Google account in‑app, delete backup files from Google Drive, or contact us for data deletion requests.</p>
+<p lang="en">Contact: <a href="mailto:jsyzkem12@gmail.com">jsyzkem12@gmail.com</a></p>
+
+<!-- 
+<h2 id="dev-notes">개발자 참고 (게시 후 숨겨도 됨)</h2>
+<details>
+  <summary>게시 전 체크리스트 펼치기</summary>
+  <ul>
+    <li>Manifest 위치 권한(ACCESS_COARSE/FINE/BACKGROUND_LOCATION) 실제 사용 여부 확인.</li>
+    <li>위치 기반 기능 없으면 권한 삭제하고 본 문서에서 위치 관련 문구 축소.</li>
+    <li>Firebase 사용 모듈(Analytics/Crashlytics/Performance) 확인 후 위 내용과 일치하도록 유지.</li>
+    <li>AdMob 미사용 시 상단 표 및 관련 문구 제거.</li>
+    <li>Play Console &gt; <em>App content → Privacy policy</em>에 본 페이지 URL 입력.</li>
+    <li>Play Console &gt; <em>Data safety</em> 양식에서 Approximate Location(수집/공유) 등 항목을 이 문서와 일치시키기.</li>
+    <li>백그라운드 위치 사용 시 Location permissions declaration form + 기능 시연 영상 제출.</li>
+  </ul>
+  <p><small>이 블록은 최종 공개 시 삭제하거나 숨길 수 있습니다.</small></p>
+</details>
+-->
+</main>
+
+<footer>
+  <p><a href="#top">맨 위로 ↑<
